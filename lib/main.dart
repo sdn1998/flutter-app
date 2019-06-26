@@ -30,25 +30,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
-      child: Column(
-        children: <Widget>[
-          SizedBox(
-        height: 250.0,
-      ),
-          Image(
-            image: AssetImage('images/logo.png'),
-            width: 200.0,
-            height: 200.0,
-          ),
-          SizedBox(
-            height: 75.0,
-          ),
-          Text(
-            "News",
-            style: TextStyle(fontSize: 50.0),
-          )
-        ],
-      ),
+      child: Text(
+        "News",
+        style: TextStyle(fontSize: 50.0),
+      )
     ));
   }
 }
