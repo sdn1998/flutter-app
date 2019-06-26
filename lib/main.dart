@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
           primarySwatch: Colors.blue,
-          fontFamily: "GoogleSans",
           buttonColor: Colors.blue),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -46,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Text(
             "News",
-            style: TextStyle(fontFamily: "GoogleSans", fontSize: 50.0),
+            style: TextStyle(fontSize: 50.0),
           )
         ],
       ),
