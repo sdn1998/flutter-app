@@ -10,10 +10,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: "GoogleSans",
-        buttonColor: Colors.blue
-      ),
+          primarySwatch: Colors.blue,
+          fontFamily: "GoogleSans",
+          buttonColor: Colors.blue),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -28,80 +27,29 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Form(
-          child: ListView(
-            padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0),
-            children: <Widget>[
-              SizedBox(height: 30.0),
-              Row(
-                children: <Widget>[
-                  SizedBox(width: 10.0),
-                  Text('Login',
-                      style:
-                      TextStyle(fontSize: 50.0, fontFamily: 'GoogleSans')),
-                  SizedBox(width: 150.0),
-                  Hero(
-                    tag: 'sd',
-                    child: Image(
-                      image: AssetImage('images/logo.png'),
-                      width: 130.0,
-                      height: 130.0,
-                    ),
-                  )
-                ],
-              ),
-              SizedBox(height: 50.0),
-              TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'E-mail',
-                  filled: true,
-                  fillColor: Colors.white12,
-                  suffixIcon: Icon(Icons.email),
-                ),
-              ),
-              SizedBox(height: 10.0),
-              TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Password',
-                  filled: true,
-                  fillColor: Colors.white12,
-                  suffixIcon: Icon(Icons.lock),
-                ),
-                obscureText: true,
-              ),
-              ButtonBar(
-                children: <Widget>[
-                  RaisedButton(
-                    child: Text('Cancel',
-                        style: TextStyle(
-                            color: Colors.white, fontFamily: 'GoogleSans')),
-                    shape: new RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(30.0)),
-                    onPressed: () {},
-                  ),
-                  RaisedButton(
-                    child: Text('Sign In',
-                        style: TextStyle(
-                            color: Colors.white, fontFamily: 'GoogleSans')),
-                    shape: new RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(30.0)),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-              FlatButton(
-                child: Text('Not a user? Click here'),
-                shape: new RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(30.0)),
-                onPressed: () {},
-              ),
-            ],
-          )),
-    );
+        body: Center(
+      child: Column(
+        children: <Widget>[
+          SizedBox(
+        height: 250.0,
+      ),
+          Image(
+            image: AssetImage('images/logo.png'),
+            width: 200.0,
+            height: 200.0,
+          ),
+          SizedBox(
+            height: 75.0,
+          ),
+          Text(
+            "News",
+            style: TextStyle(fontFamily: "GoogleSans", fontSize: 50.0),
+          )
+        ],
+      ),
+    ));
   }
-
 }
